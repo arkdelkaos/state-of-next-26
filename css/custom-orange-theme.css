@@ -1,0 +1,83 @@
+/* Custom orange theme for presentations */
+
+/* Load JetBrains Mono Nerd Font */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Heading sizes and logo background */
+.reveal {
+  --r-heading1-size: 2em;
+  --r-heading2-size: 1.5em;
+  --r-heading3-size: 1.2em;
+  --r-heading4-size: 1em;
+  --r-heading5-size: 0.8em;
+  --r-heading6-size: 0.6em;
+}
+
+/* Logo in top right corner */
+.reveal .slides {
+  background-image: url('../../../05_Media/logo_+O.png');
+  background-repeat: no-repeat;
+  background-position: top 20px right 20px;
+  background-size: 100px auto;
+}
+
+/* H1: Orange */
+.reveal h1 {
+  color: #FF7800 !important;
+}
+
+/* H2: Yellow */
+.reveal h2 {
+  color: #FFE000 !important;
+}
+
+/* H3: White background with black text */
+.reveal h3 {
+  color: #000000 !important;
+  background-color: #FFFFFF !important;
+  padding: 0 20px !important;
+  display: inline-block !important;
+}
+
+/* H4-H6: Keep orange */
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #FF7800 !important;
+}
+
+/* Bold text: Orange like H1 */
+.reveal strong,
+.reveal b {
+  color: #FF7800 !important;
+}
+
+/* Strikethrough text: Pink */
+.reveal s,
+.reveal del,
+.reveal strike {
+  color: #F72585 !important;
+}
+
+/* Code blocks: JetBrains Mono font with custom colors */
+.reveal code,
+.reveal pre,
+.reveal pre code {
+  font-family: 'JetBrains Mono', monospace !important;
+  background-color: #101a23 !important;
+  color: #7209b7 !important;
+}
+
+.reveal pre {
+  background-color: #101a23 !important;
+}
+
+.reveal code {
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+}
